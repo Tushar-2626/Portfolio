@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar Kumar Sahoo | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* --- Custom Animations --- */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateX(-60px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .slide-in {
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .zoom-in {
+      animation: zoomIn 1s ease-in-out forwards;
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px #60a5fa, 0 0 20px #3b82f6; }
+      50% { box-shadow: 0 0 20px #60a5fa, 0 0 40px #2563eb; }
+    }
+    .glow {
+      animation: glow 2s infinite alternate;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-800 text-gray-100 scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-400 tracking-wide">Tushar Kumar Sahoo</h1>
+      <nav class="space-x-6 text-gray-200 font-medium">
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#education" class="hover:text-blue-400 transition">Education</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+    <img src="tushar.jpg" alt="Tushar Kumar Sahoo" class="rounded-full w-48 h-48 mb-6 border-4 border-blue-400 shadow-2xl glow zoom-in">
+    <h2 class="text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 fade-in">
+      Hi, I'm Tushar Kumar Sahoo
+    </h2>
+    <p class="text-lg sm:text-xl text-gray-300 max-w-xl mb-8 fade-in">A creative Web Developer crafting responsive, aesthetic, and fast websites that bring ideas to life.</p>
+    <div class="flex gap-4 fade-in">
+      <a href="#projects" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-400 transition">View Projects</a>
+      <a href="mailto:tusharkumarsahoo@example.com" class="border border-blue-400 px-8 py-3 rounded-full text-blue-300 hover:bg-blue-500/10 transition">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <img src="tushar.jpg" alt="Tushar Kumar Sahoo" class="w-72 h-72 object-cover rounded-2xl border-4 border-blue-500 shadow-2xl slide-in">
+      <div class="text-center md:text-left fade-in">
+        <h3 class="text-4xl font-bold text-blue-400 mb-4">About Me</h3>
+        <p class="text-gray-300 text-lg leading-relaxed mb-4">
+          I'm a dedicated Web Developer who loves to turn creative concepts into interactive web experiences.  
+          My focus lies in crafting responsive, visually appealing, and performance-optimized web designs.
+        </p>
+        <p class="text-gray-400">I enjoy exploring modern frameworks and constantly upgrading my skills in UI/UX and front-end development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-20 bg-white/10 backdrop-blur-md">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold text-blue-400 mb-10 fade-in">Education</h3>
+      <div class="max-w-3xl mx-auto space-y-8 text-left">
+        <div class="border-l-4 border-blue-500 pl-6 fade-in">
+          <h4 class="text-2xl font-semibold text-white">B.Tech in Computer Science</h4>
+          <p class="text-gray-300">GIFT (Autonomous), Bhubaneswar — <span class="italic">2022–2026</span></p>
+        </div>
+        <div class="border-l-4 border-blue-500 pl-6 fade-in">
+          <h4 class="text-2xl font-semibold text-white">Higher Secondary (CHSE Odisha)</h4>
+          <p class="text-gray-300">Completed in 2022</p>
+        </div>
+        <div class="border-l-4 border-blue-500 pl-6 fade-in">
+          <h4 class="text-2xl font-semibold text-white">Matriculation (BSE Odisha)</h4>
+          <p class="text-gray-300">Completed in 2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold text-blue-400 mb-10 fade-in">Skills</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">HTML</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">CSS</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">Tailwind CSS</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">JavaScript</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">Python</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">React</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">Git & GitHub</div>
+        <div class="bg-white/10 hover:bg-blue-500/20 rounded-xl py-6 font-semibold text-gray-200 hover:text-blue-300 transition transform hover:scale-105 shadow-lg fade-in">UI/UX</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-white/10 backdrop-blur-md">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold text-blue-400 mb-10 fade-in">Projects</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div class="bg-white/10 border border-blue-400/20 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105 fade-in">
+          <h4 class="text-2xl font-semibold mb-2 text-white">Portfolio Website</h4>
+          <p class="text-gray-300 text-sm">A personal portfolio showcasing modern UI design using Tailwind CSS.</p>
+        </div>
+        <div class="bg-white/10 border border-blue-400/20 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105 fade-in">
+          <h4 class="text-2xl font-semibold mb-2 text-white">Number Guessing Game</h4>
+          <p class="text-gray-300 text-sm">Fun game logic built using HTML, CSS & JS with interactive feedback.</p>
+        </div>
+        <div class="bg-white/10 border border-blue-400/20 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105 fade-in">
+          <h4 class="text-2xl font-semibold mb-2 text-white">Weather App</h4>
+          <p class="text-gray-300 text-sm">Displays real-time weather using API integration and Tailwind design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6 text-center fade-in">
+      <h3 class="text-4xl font-bold text-blue-400 mb-6">Contact Me</h3>
+      <p class="text-gray-300 mb-8">Have an idea or project? Let’s work together!</p>
+      <a href="mailto:tusharkumarsahoo@example.com" class="bg-blue-500 text-white px-10 py-3 rounded-full font-semibold hover:bg-blue-400 transition">📩 Send Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white/10 border-t border-white/20 py-6 text-center text-gray-400">
+    <p>© 2025 Tushar Kumar Sahoo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
